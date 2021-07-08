@@ -1,0 +1,29 @@
+.main_comics {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.main_comics::before {
+    content: "";
+    display: block;
+    height: 390px;
+    background-image: url("../img/jumbotron.jpg");
+    background-position: center top;
+    background-size: cover;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        width: calc(100% / 6 - 10px);
+        margin: 20px 5px;
+        img {
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            object-position: top;
+        }
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+}

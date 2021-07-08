@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans Jp", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+#dc_power {
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+  text-transform: uppercase;
+}
+#dc_power span:first-child {
+  padding: 0 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+.menu .logo {
+  height: 80px;
+}
+.menu .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  flex-grow: 1;
+}
+.menu .links li {
+  display: inline-block;
+  padding: 1rem;
+}
+.menu .links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu .research {
+  display: flex;
+  align-items: center;
+}
+.menu .research #search {
+  border: 0;
+  color: #000;
+  text-align: right;
+  width: 90px;
+  height: 30px;
+}
+.menu .research i {
+  padding-left: 5px;
+}
+
+.main_comics {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.main_comics::before {
+  content: "";
+  display: block;
+  height: 390px;
+  background-image: url("../img/jumbotron.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .card {
+  width: calc(100% / 6 - 10px);
+  margin: 20px 5px;
+}
+.gallery .card img {
+  height: 180px;
+  width: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.gallery .card h4 {
+  text-transform: uppercase;
+}
+
+#dc_power {
+  background-color: #0282f9;
+}

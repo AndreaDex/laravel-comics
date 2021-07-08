@@ -1,1 +1,8 @@
-//
+@import "partials/variables";
+@import "partials/common";
+@import "partials/header";
+@import "partials/maincomics";
+
+#dc_power {
+    background-color: $dc-blue;
+}
