@@ -1,6 +1,69 @@
+@import "variables";
+
 .main_comics {
-    background-color: #1c1c1c;
+    background-color: $bg-comics;
     color: #fff;
+
+    h2 {
+        display: inline-block;
+        background-color: $dc-blue;
+        padding: 10px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            width: calc(100% / 6 - 10px);
+            margin: 20px 5px;
+            img {
+                height: 180px;
+                width: 180px;
+                object-fit: cover;
+                object-position: top;
+            }
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .load {
+        padding: 20px 0;
+        text-align: center;
+        .more {
+            border: none;
+            background-color: $dc-blue;
+            padding: 5px 40px;
+            a {
+                color: #fff;
+                font-size: 600;
+            }
+        }
+    }
+
+    .panel {
+        background-color: $dc-blue;
+        padding: 40px 0;
+
+        .panel_list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 60px;
+                    padding: 0 10px;
+                }
+                a {
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 .main_comics::before {
     content: "";
@@ -9,21 +72,4 @@
     background-image: url("../img/jumbotron.jpg");
     background-position: center top;
     background-size: cover;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    .card {
-        width: calc(100% / 6 - 10px);
-        margin: 20px 5px;
-        img {
-            height: 180px;
-            width: 180px;
-            object-fit: cover;
-            object-position: top;
-        }
-        h4 {
-            text-transform: uppercase;
-        }
-    }
 }
