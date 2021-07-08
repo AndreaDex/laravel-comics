@@ -58,6 +58,34 @@
 
     <footer id="site_footer">
         <div class="footer_top">
+            <section>
+                <h2>dc comics</h2>
+                <ul class="footer_link">
+                    <li><a href="">Characters</a></li>
+                    <li><a href="">Comics</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Tv</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+                <section>
+                    <h2>shop</h2>
+                    <ul class="footer_link">
+                        <li><a href="">Shop DC</a></li>
+                        <li><a href="">Shop DC Collectibles</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section>
+                <h2>dc</h2>
+            </section>
+
+            <section>
+                <h2>sites</h2>
+            </section>
         </div>
         <div class="footer_btm">
         </div>

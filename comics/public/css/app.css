@@ -139,6 +139,11 @@ a {
   background-size: cover;
 }
 
+.footer_top {
+  background-image: url("../img/footer-bg.jpg");
+  height: 300px;
+}
+
 #dc_power {
   background-color: #0282f9;
 }
