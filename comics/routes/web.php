@@ -23,6 +23,9 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
+
+/* Comics Routes */
+
 Route::get('/comics', function () {
     $comics = config('comics');
     //var_dump($comics);
@@ -34,8 +37,19 @@ Route::get('comics/{id}', function ($id) {
     $comics = config('comics');
     $comic = $comics[$id];
 
-    return view('comics.show', compact('comic'));
+    <var></var>
+
+    if (is_numeric($id) && $id < count($comics) && $id >= 0) {
+
+        return view('comics.show', compact('comic'));
+    } else {
+
+        abort(404);
+    }
 })->name('comic');
+
+/* Comics Routes */
+
 
 Route::get('/movie', function () {
     return view('movie');
