@@ -32,8 +32,8 @@
         <nav class="menu">
             <img src="{{asset('img/dc-logo.png')}}" alt="" class="logo">
             <ul class="links">
-                <li><a href="{{route('characters')}}">Characters</a></li>
-                <li><a href="{{route('comics')}}">Comics</a></li>
+                <li><a href="{{route('characters')}}" class="{{Route::currentRouteName() == 'characters' ? 'active' : ''}}">Characters</a></li>
+                <li><a href="{{route('comics')}}" class="{{Route::currentRouteName() == 'comics' ? 'active' : ''}}">Comics</a></li>
                 <li><a href="{{route('movie')}}">Movies</a></li>
                 <li><a href="">Tv</a></li>
                 <li><a href="">Games</a></li>
@@ -45,8 +45,10 @@
                 <li></li>
             </ul>
             <div class="research">
-                <input type="text" name="search" id="search" placeholder="Search">
-                <i class="fas fa-search"></i>
+                <div class="search_block">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
         </nav>
     </div>

@@ -36,14 +36,27 @@
         display: flex;
         align-items: center;
         #search {
+            font-size: 17px;
+            text-align: right;
             border: 0;
             color: #000;
-            text-align: right;
             width: 90px;
             height: 30px;
         }
+
         i {
             padding-left: 5px;
+        }
+        .search_block {
+            text-align: right;
+            border-bottom: 2px solid #0282f9;
+            /* &::after {
+                content: "";
+                display: block;
+                height: 2px;
+                color: #0282f9;
+                width: 200px;
+            } */
         }
     }
 }
