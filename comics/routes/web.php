@@ -37,7 +37,7 @@ Route::get('comics/{id}', function ($id) {
     $comics = config('comics');
     $comic = $comics[$id];
 
-    <var></var>
+
 
     if (is_numeric($id) && $id < count($comics) && $id >= 0) {
 

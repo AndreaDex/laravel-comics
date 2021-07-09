@@ -13,6 +13,11 @@ body {
   margin: auto;
 }
 
+.container_small {
+  width: 60%;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -23,6 +28,7 @@ a {
   font-size: 12px;
   text-align: right;
   text-transform: uppercase;
+  background-color: #0282f9;
 }
 #dc_power span:first-child {
   padding: 0 40px;
@@ -51,6 +57,9 @@ a {
 .menu .links li a {
   text-decoration: none;
   text-transform: uppercase;
+}
+.menu .links li a.active {
+  border-bottom: 2px solid #0282f9;
 }
 .menu .research {
   display: flex;
@@ -106,7 +115,8 @@ a {
   -o-object-position: top;
      object-position: top;
 }
-.main_comics .gallery .card h4 {
+.main_comics .gallery .card h5 {
+  color: #fff;
   text-transform: uppercase;
 }
 .main_comics .load {
@@ -153,11 +163,125 @@ a {
   background-size: cover;
 }
 
+.show::before {
+  content: "";
+  display: block;
+  height: 390px;
+  background-image: url("../img/jumbotron.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.show {
+  position: relative;
+}
+
+.details::before {
+  content: "";
+  display: block;
+  height: 78px;
+  background-color: #0282f9;
+}
+
+.details .cover {
+  position: absolute;
+  top: 145px;
+  left: 300px;
+}
+.details .container_small {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details .description {
+  width: 60%;
+  margin-bottom: 20px;
+}
+.details .description h2 {
+  text-transform: uppercase;
+  color: #003f5e;
+  line-height: 40px;
+  margin-top: 21px;
+  margin-bottom: 25px;
+}
+.details .description .buy {
+  display: flex;
+  background: #55ba59;
+  border-bottom: 1px solid #357739;
+}
+.details .description .buy .buy_price {
+  color: #fff;
+  padding: 17px 25px 13px;
+  font-size: 17px;
+}
+.details .description .buy .buy_status {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.details .description .buy .buy_status span {
+  color: #bafd9c;
+  padding: 17px 25px 13px;
+}
+.details .description .buy .buy_status .buy_now {
+  border-left: 1px solid #357739;
+  padding: 17px 25px 13px;
+}
+.details .description .buy .buy_status .buy_now a {
+  color: #fff;
+  text-transform: none;
+  font-size: 14px;
+}
+.details .description .synopsis {
+  font-size: 14px;
+  line-height: 23px;
+  color: #555555;
+  padding: 40px 0;
+}
+.details .advertisement {
+  width: 40%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .info {
+  background-color: #f6f6f6;
+  display: flex;
+  padding-bottom: 80px;
+}
+.details .info h2 {
+  font-size: 26px;
+  padding: 25px 0;
+}
+.details .info .field {
+  display: flex;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+}
+.details .info .field_lable {
+  width: 30%;
+  color: #003f5e;
+  font-size: 13px;
+  line-height: 40px;
+}
+.details .info .field_text {
+  color: #00a9d9;
+  width: 70%;
+  padding: 12px 0;
+  line-height: 16px;
+  display: block;
+  font-size: 12px;
+}
+.details .info .talent {
+  width: 50%;
+  padding-right: 10px;
+}
+.details .info .specs {
+  width: 50%;
+  padding-left: 10px;
+}
+
 .footer_top {
   background-image: url("../img/footer-bg.jpg");
   height: 300px;
-}
-
-#dc_power {
-  background-color: #0282f9;
 }

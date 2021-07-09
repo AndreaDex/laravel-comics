@@ -4,6 +4,8 @@
     text-align: right;
     text-transform: uppercase;
 
+    background-color: $dc-blue;
+
     span:first-child {
         padding: 0 40px;
     }
@@ -29,6 +31,10 @@
             a {
                 text-decoration: none;
                 text-transform: uppercase;
+
+                &.active {
+                    border-bottom: 2px solid $dc-blue;
+                }
             }
         }
     }

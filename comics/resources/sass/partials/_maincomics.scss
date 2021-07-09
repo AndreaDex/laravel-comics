@@ -24,7 +24,8 @@
                 object-fit: cover;
                 object-position: top;
             }
-            h4 {
+            h5 {
+                color: #fff;
                 text-transform: uppercase;
             }
         }
@@ -68,10 +69,5 @@
     }
 }
 .main_comics::before {
-    content: "";
-    display: block;
-    height: 390px;
-    background-image: url("../img/jumbotron.jpg");
-    background-position: center top;
-    background-size: cover;
+    @include jumbo_comic;
 }

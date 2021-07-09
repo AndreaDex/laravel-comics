@@ -1,0 +1,115 @@
+.show::before {
+    @include jumbo_comic;
+}
+.show {
+    position: relative;
+}
+.details::before {
+    content: "";
+    display: block;
+    height: 78px;
+    background-color: $dc-blue;
+}
+.details {
+    .cover {
+        position: absolute;
+        top: 145px;
+        left: 300px;
+    }
+    .container_small {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .description {
+        width: 60%;
+        margin-bottom: 20px;
+        h2 {
+            text-transform: uppercase;
+            color: #003f5e;
+            line-height: 40px;
+            margin-top: 21px;
+            margin-bottom: 25px;
+        }
+        .buy {
+            display: flex;
+            background: #55ba59;
+            border-bottom: 1px solid #357739;
+            .buy_price {
+                color: #fff;
+                padding: 17px 25px 13px;
+                font-size: 17px;
+            }
+            .buy_status {
+                display: flex;
+                margin-left: auto;
+                align-items: center;
+                span {
+                    color: #bafd9c;
+                    padding: 17px 25px 13px;
+                }
+                .buy_now {
+                    border-left: 1px solid #357739;
+                    padding: 17px 25px 13px;
+                    a {
+                        color: #fff;
+                        text-transform: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .synopsis {
+            font-size: 14px;
+            line-height: 23px;
+            color: #555555;
+            padding: 40px 0;
+        }
+    }
+
+    .advertisement {
+        width: 40%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        background-color: #f6f6f6;
+        display: flex;
+        padding-bottom: 80px;
+        h2 {
+            font-size: 26px;
+
+            padding: 25px 0;
+        }
+        .field {
+            display: flex;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .field_lable {
+            width: 30%;
+            color: #003f5e;
+            font-size: 13px;
+            line-height: 40px;
+        }
+        .field_text {
+            color: #00a9d9;
+            width: 70%;
+            padding: 12px 0;
+            line-height: 16px;
+            display: block;
+            font-size: 12px;
+        }
+        .talent {
+            width: 50%;
+            padding-right: 10px;
+        }
+        .specs {
+            width: 50%;
+            padding-left: 10px;
+        }
+    }
+}
