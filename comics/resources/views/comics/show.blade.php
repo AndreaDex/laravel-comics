@@ -88,34 +88,48 @@ $writers = $comic['writers'];
                         </div>
                     </div>
                 </div>
+
                 <div class="specs">
                     <h2>Specs</h2>
 
                     <div class="field">
                         <div class="field_lable">
-                            <span>Art by:</span>
+                            <span>Series:</span>
                         </div>
                         <div class="field_text">
 
-                            @foreach ($artists as $artist)
+                            <span>{{$comic['series']}} </span>
 
-                            <span>{{$artist}}, </span>
+                        </div>
+                    </div>
 
-                            @endforeach
+                    <div class="field">
+                        <div class="field_lable">
+                            <span>Us price:</span>
+                        </div>
+                        <div class="field_text">
+                            <span>{{$comic['price']}} </span>
+                        </div>
+                    </div>
 
+                    <div class="field">
+                        <div class="field_lable">
+                            <span>On sale date:</span>
+                        </div>
+                        <div class="field_text">
 
+                            <span>{{$comic['sale_date']}} </span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
 
-</div>
 
 
 
 
-
-@endsection
+    @endsection
